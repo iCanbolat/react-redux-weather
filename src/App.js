@@ -1,6 +1,6 @@
 import './App.css';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route,
   Link
@@ -32,10 +32,10 @@ function App() {
       {/* A <Switch> looks through its children <Route>s and
           renders the first one that matches the current URL. */}
       <Switch>
-        <Route path="/about" component={About} >
+        <Route path="/about">
           <About />
         </Route>
-        <Route path="/" component={Home}>
+        <Route path="/" >
           <Home />
         </Route>
       </Switch>
