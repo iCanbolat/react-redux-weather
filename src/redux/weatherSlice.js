@@ -3,7 +3,7 @@ import axios from "axios";
 
  
 export const fetchDefault = createAsyncThunk('weather/getWeather', async (selectedCity) => {
-    const res = await axios(`http://api.weatherapi.com/v1/forecast.json?key=ebb6c0feefc646f6aa6124922211211&q=${selectedCity}&days=10&aqi=no&alerts=no
+    const res = await axios(`https://api.weatherapi.com/v1/forecast.json?key=ebb6c0feefc646f6aa6124922211211&q=${selectedCity}&days=10&aqi=no&alerts=no
     `)
     return res.data 
 });
