@@ -24,8 +24,6 @@ export const weatherSlice = createSlice({
             let a = action.payload.forecast?.forecastday
             let b = a.map(({date})=> date).map(x => new Date(x).toLocaleString('en-us', {weekday: 'long'}) )
             state.days = b
-            console.log(state.item)
-            console.log(state.days)
              
         },
         [fetchDefault.pending]: (state , action) => {
